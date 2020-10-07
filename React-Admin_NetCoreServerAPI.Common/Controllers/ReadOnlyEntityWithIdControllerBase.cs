@@ -4,7 +4,7 @@ using LinqKit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
-using ReactAdminNetCoreServerAPI.Common.Definitions;
+using ReactAdminRestServer.Common.Definitions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ReactAdminNetCoreServerAPI.Common.Controllers
+namespace ReactAdminRestServer.Common.Controllers
 {
     [ApiController]
     [Produces("application/json")]

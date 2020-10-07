@@ -14,9 +14,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using FluentValidation.AspNetCore;
-//using ReactAdminNetCoreServerAPI.APITemplate.Data;
+//using ReactAdminRestServer.APITemplate.Data;
 
-namespace ReactAdminNetCoreServerAPI.APITemplate
+namespace ReactAdminRestServer.APITemplate
 {
     public class Startup
     {

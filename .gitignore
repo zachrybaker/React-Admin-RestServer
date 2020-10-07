@@ -14,3 +14,7 @@
 /React-Admin_NetCoreServerAPI.Common/bin/Debug/netcoreapp3.1
 /React-Admin_NetCoreServerAPI.Common/obj/Debug/netcoreapp3.1
 /React-Admin_NetCoreServerAPI.Common/obj
+/.vs/ReactAdminRestServer/v16
+/React-Admin_NetCoreServerAPI.Common/bin
+/ReactAdminNetCoreServerAPI.APITemplate/bin/Release/netcoreapp3.1
+/ReactAdminNetCoreServerAPI.DemoAPI/bin/Release/netcoreapp3.1

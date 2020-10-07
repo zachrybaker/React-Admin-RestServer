@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ReactAdminNetCoreServerAPI.Common.Definitions
+namespace ReactAdminRestServer.Common.Definitions
 {
    public class PagedList<T> : IPagedList<T>
     {

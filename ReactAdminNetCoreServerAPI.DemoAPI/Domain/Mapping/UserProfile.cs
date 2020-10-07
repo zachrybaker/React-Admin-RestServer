@@ -1,24 +1,24 @@
 using System;
 using AutoMapper;
-using ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities;
-using ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models;
+using ReactAdminRestServer.DemoAPI.Data.Entities;
+using ReactAdminRestServer.DemoAPI.Domain.Models;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Domain.Mapping
+namespace ReactAdminRestServer.DemoAPI.Domain.Mapping
 {
     public partial class UserProfile
         : AutoMapper.Profile
     {
         public UserProfile()
         {
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.User, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.UserReadModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.User, ReactAdminRestServer.DemoAPI.Domain.Models.UserReadModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.UserCreateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.User>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.UserCreateModel, ReactAdminRestServer.DemoAPI.Data.Entities.User>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.User, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.UserUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.User, ReactAdminRestServer.DemoAPI.Domain.Models.UserUpdateModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.UserUpdateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.User>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.UserUpdateModel, ReactAdminRestServer.DemoAPI.Data.Entities.User>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.UserReadModel, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.UserUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.UserReadModel, ReactAdminRestServer.DemoAPI.Domain.Models.UserUpdateModel>();
 
         }
 

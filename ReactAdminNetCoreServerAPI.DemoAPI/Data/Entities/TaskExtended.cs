@@ -1,9 +1,9 @@
-using ReactAdminNetCoreServerAPI.Common.Definitions;
+using ReactAdminRestServer.Common.Definitions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities
+namespace ReactAdminRestServer.DemoAPI.Data.Entities
 {
     public partial class TaskExtended : IHaveIdentifier<Guid>
     {

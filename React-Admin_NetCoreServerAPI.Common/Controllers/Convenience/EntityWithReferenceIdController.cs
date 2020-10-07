@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ReactAdminNetCoreServerAPI.Common.Definitions;
+using ReactAdminRestServer.Common.Definitions;
 using System;
 
-namespace ReactAdminNetCoreServerAPI.Common.Controllers
+namespace ReactAdminRestServer.Common.Controllers
 {
     /// <summary>
     /// A base controller for class-based identifiers, such as strings.

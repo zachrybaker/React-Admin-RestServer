@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Data.Mapping
+namespace ReactAdminRestServer.DemoAPI.Data.Mapping
 {
     public partial class TaskMap
-        : IEntityTypeConfiguration<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Task>
+        : IEntityTypeConfiguration<ReactAdminRestServer.DemoAPI.Data.Entities.Task>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Task> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminRestServer.DemoAPI.Data.Entities.Task> builder)
         {
             #region Generated Configure
             // table

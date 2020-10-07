@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Data.Mapping
+namespace ReactAdminRestServer.DemoAPI.Data.Mapping
 {
     public partial class RoleMap
-        : IEntityTypeConfiguration<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Role>
+        : IEntityTypeConfiguration<ReactAdminRestServer.DemoAPI.Data.Entities.Role>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Role> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminRestServer.DemoAPI.Data.Entities.Role> builder)
         {
             #region Generated Configure
             // table

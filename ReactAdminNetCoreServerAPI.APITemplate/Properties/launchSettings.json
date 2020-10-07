@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ReactAdminNetCoreServerAPI.APITemplate": {
+    "ReactAdminRestServer.APITemplate": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger/index.html",

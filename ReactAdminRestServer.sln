@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactAdminNetCoreServerAPI.Common", "React-Admin_NetCoreServerAPI.Common\ReactAdminNetCoreServerAPI.Common.csproj", "{1B80D34A-AF6D-4110-BABC-0409D74D6CA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactAdminRestServer", "React-Admin_NetCoreServerAPI.Common\ReactAdminRestServer.csproj", "{1B80D34A-AF6D-4110-BABC-0409D74D6CA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactAdminNetCoreServerAPI.DemoAPI", "ReactAdminNetCoreServerAPI.DemoAPI\ReactAdminNetCoreServerAPI.DemoAPI.csproj", "{BD3BD3FA-98D6-49F4-BCC8-501D1DDC4C8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactAdminRestServer.DemoAPI", "ReactAdminNetCoreServerAPI.DemoAPI\ReactAdminRestServer.DemoAPI.csproj", "{BD3BD3FA-98D6-49F4-BCC8-501D1DDC4C8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactAdminNetCoreServerAPI.APITemplate", "ReactAdminNetCoreServerAPI.APITemplate\ReactAdminNetCoreServerAPI.APITemplate.csproj", "{777AE1EF-A25C-4BBD-8EE2-4989FFFC1731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactAdminRestServer.APITemplate", "ReactAdminNetCoreServerAPI.APITemplate\ReactAdminRestServer.APITemplate.csproj", "{777AE1EF-A25C-4BBD-8EE2-4989FFFC1731}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

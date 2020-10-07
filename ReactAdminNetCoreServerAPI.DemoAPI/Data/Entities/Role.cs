@@ -1,8 +1,8 @@
-using ReactAdminNetCoreServerAPI.Common.Definitions;
+using ReactAdminRestServer.Common.Definitions;
 using System;
 using System.Collections.Generic;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities
+namespace ReactAdminRestServer.DemoAPI.Data.Entities
 {
     public partial class Role : IHaveIdentifier<Guid>
     {

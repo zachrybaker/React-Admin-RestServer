@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Data.Mapping
+namespace ReactAdminRestServer.DemoAPI.Data.Mapping
 {
     public partial class TaskExtendedMap
-        : IEntityTypeConfiguration<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.TaskExtended>
+        : IEntityTypeConfiguration<ReactAdminRestServer.DemoAPI.Data.Entities.TaskExtended>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.TaskExtended> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminRestServer.DemoAPI.Data.Entities.TaskExtended> builder)
         {
             #region Generated Configure
             // table
@@ -69,7 +69,7 @@ namespace ReactAdminNetCoreServerAPI.DemoAPI.Data.Mapping
             // relationships
             builder.HasOne(t => t.Task)
                 .WithOne(t => t.TaskExtended)
-                .HasForeignKey<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.TaskExtended>(d => d.TaskId)
+                .HasForeignKey<ReactAdminRestServer.DemoAPI.Data.Entities.TaskExtended>(d => d.TaskId)
                 .HasConstraintName("FK_TaskExtended_Task_TaskId");
 
             #endregion

@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Data.Mapping
+namespace ReactAdminRestServer.DemoAPI.Data.Mapping
 {
     public partial class UserMap
-        : IEntityTypeConfiguration<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.User>
+        : IEntityTypeConfiguration<ReactAdminRestServer.DemoAPI.Data.Entities.User>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.User> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ReactAdminRestServer.DemoAPI.Data.Entities.User> builder)
         {
             #region Generated Configure
             // table

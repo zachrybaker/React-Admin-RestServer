@@ -1,24 +1,24 @@
 using System;
 using AutoMapper;
-using ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities;
-using ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models;
+using ReactAdminRestServer.DemoAPI.Data.Entities;
+using ReactAdminRestServer.DemoAPI.Domain.Models;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Domain.Mapping
+namespace ReactAdminRestServer.DemoAPI.Domain.Mapping
 {
     public partial class StatusProfile
         : AutoMapper.Profile
     {
         public StatusProfile()
         {
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Status, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.StatusReadModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.Status, ReactAdminRestServer.DemoAPI.Domain.Models.StatusReadModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.StatusCreateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Status>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.StatusCreateModel, ReactAdminRestServer.DemoAPI.Data.Entities.Status>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Status, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.StatusUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.Status, ReactAdminRestServer.DemoAPI.Domain.Models.StatusUpdateModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.StatusUpdateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Status>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.StatusUpdateModel, ReactAdminRestServer.DemoAPI.Data.Entities.Status>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.StatusReadModel, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.StatusUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.StatusReadModel, ReactAdminRestServer.DemoAPI.Domain.Models.StatusUpdateModel>();
 
         }
 

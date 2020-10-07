@@ -7,7 +7,7 @@ using LinqKit;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace ReactAdminNetCoreServerAPI.Common.Controllers
+namespace ReactAdminRestServer.Common.Controllers
 {
     /// <summary>
     /// Delegate for means to translate a filter to an identity comparison expression.

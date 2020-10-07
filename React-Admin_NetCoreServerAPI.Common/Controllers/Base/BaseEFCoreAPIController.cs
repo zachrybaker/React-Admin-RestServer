@@ -2,7 +2,7 @@
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ReactAdminNetCoreServerAPI.Common.Definitions;
+using ReactAdminRestServer.Common.Definitions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ReactAdminNetCoreServerAPI.Common.Controllers
+namespace ReactAdminRestServer.Common.Controllers
 {
      public delegate IQueryable<TEntity> WithFilter<TEntity, TIndentifier>( IQueryable<TEntity> queryable) 
         where TEntity : class, IHaveIdentifier<TIndentifier>; 

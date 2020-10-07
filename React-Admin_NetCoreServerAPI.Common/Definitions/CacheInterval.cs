@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
 
-namespace ReactAdminNetCoreServerAPI.Common.Definitions
+namespace ReactAdminRestServer.Common.Definitions
 {
     public enum CacheInterval
     {

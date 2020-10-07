@@ -1,7 +1,7 @@
 # Explained in detail at https://efg.loresoft.com/en/latest/configuration/
 project:
-  namespace: 'ReactAdminNetCoreServerAPI.DemoAPI'
-  directory: .\ReactAdminNetCoreServerAPI.DemoAPI\
+  namespace: 'ReactAdminRestServer.DemoAPI'
+  directory: .\ReactAdminRestServer.DemoAPI\
 database:
   provider: SqlServer
   connectionName: ConnectionStrings:DemoDBConnectionString

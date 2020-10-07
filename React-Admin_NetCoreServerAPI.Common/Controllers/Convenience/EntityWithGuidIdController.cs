@@ -3,12 +3,12 @@ using LinqKit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
-using ReactAdminNetCoreServerAPI.Common.Definitions;
+using ReactAdminRestServer.Common.Definitions;
 using System;
 using System.Diagnostics;
 using System.Linq.Expressions;
 
-namespace ReactAdminNetCoreServerAPI.Common.Controllers
+namespace ReactAdminRestServer.Common.Controllers
 {
     /// <summary>
     /// A Guid-based identity controller.

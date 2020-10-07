@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models
+namespace ReactAdminRestServer.DemoAPI.Domain.Models
 {
     public partial class StatusReadModel
     {

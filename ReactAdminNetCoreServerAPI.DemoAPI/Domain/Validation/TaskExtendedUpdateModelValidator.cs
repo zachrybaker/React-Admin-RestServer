@@ -1,8 +1,8 @@
 using System;
 using FluentValidation;
-using ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models;
+using ReactAdminRestServer.DemoAPI.Domain.Models;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Domain.Validation
+namespace ReactAdminRestServer.DemoAPI.Domain.Validation
 {
     public partial class TaskExtendedUpdateModelValidator
         : AbstractValidator<TaskExtendedUpdateModel>

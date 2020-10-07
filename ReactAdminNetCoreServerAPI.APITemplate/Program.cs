@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace ReactAdminNetCoreServerAPI.APITemplate
+namespace ReactAdminRestServer.APITemplate
 {
     public class Program
     {

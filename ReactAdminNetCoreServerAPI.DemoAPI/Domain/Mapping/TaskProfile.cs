@@ -1,24 +1,24 @@
 using System;
 using AutoMapper;
-using ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities;
-using ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models;
+using ReactAdminRestServer.DemoAPI.Data.Entities;
+using ReactAdminRestServer.DemoAPI.Domain.Models;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Domain.Mapping
+namespace ReactAdminRestServer.DemoAPI.Domain.Mapping
 {
     public partial class TaskProfile
         : AutoMapper.Profile
     {
         public TaskProfile()
         {
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Task, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.TaskReadModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.Task, ReactAdminRestServer.DemoAPI.Domain.Models.TaskReadModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.TaskCreateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Task>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.TaskCreateModel, ReactAdminRestServer.DemoAPI.Data.Entities.Task>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Task, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.TaskUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.Task, ReactAdminRestServer.DemoAPI.Domain.Models.TaskUpdateModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.TaskUpdateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Task>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.TaskUpdateModel, ReactAdminRestServer.DemoAPI.Data.Entities.Task>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.TaskReadModel, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.TaskUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.TaskReadModel, ReactAdminRestServer.DemoAPI.Domain.Models.TaskUpdateModel>();
 
         }
 

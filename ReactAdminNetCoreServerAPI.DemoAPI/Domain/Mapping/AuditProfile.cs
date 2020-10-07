@@ -1,24 +1,24 @@
 using System;
 using AutoMapper;
-using ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities;
-using ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models;
+using ReactAdminRestServer.DemoAPI.Data.Entities;
+using ReactAdminRestServer.DemoAPI.Domain.Models;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Domain.Mapping
+namespace ReactAdminRestServer.DemoAPI.Domain.Mapping
 {
     public partial class AuditProfile
         : AutoMapper.Profile
     {
         public AuditProfile()
         {
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Audit, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.AuditReadModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.Audit, ReactAdminRestServer.DemoAPI.Domain.Models.AuditReadModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.AuditCreateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Audit>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.AuditCreateModel, ReactAdminRestServer.DemoAPI.Data.Entities.Audit>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Audit, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.AuditUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Data.Entities.Audit, ReactAdminRestServer.DemoAPI.Domain.Models.AuditUpdateModel>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.AuditUpdateModel, ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities.Audit>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.AuditUpdateModel, ReactAdminRestServer.DemoAPI.Data.Entities.Audit>();
 
-            CreateMap<ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.AuditReadModel, ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models.AuditUpdateModel>();
+            CreateMap<ReactAdminRestServer.DemoAPI.Domain.Models.AuditReadModel, ReactAdminRestServer.DemoAPI.Domain.Models.AuditUpdateModel>();
 
         }
 

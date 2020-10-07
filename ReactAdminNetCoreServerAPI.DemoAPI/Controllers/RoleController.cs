@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using ReactAdminNetCoreServerAPI.DemoAPI.Data;
-using ReactAdminNetCoreServerAPI.DemoAPI.Domain.Models;
-using ReactAdminNetCoreServerAPI.DemoAPI.Data.Entities;
-using ReactAdminNetCoreServerAPI.Common.Definitions;
-using ReactAdminNetCoreServerAPI.Common.Controllers;
+using ReactAdminRestServer.DemoAPI.Data;
+using ReactAdminRestServer.DemoAPI.Domain.Models;
+using ReactAdminRestServer.DemoAPI.Data.Entities;
+using ReactAdminRestServer.Common.Definitions;
+using ReactAdminRestServer.Common.Controllers;
 using System;
 using System.Linq.Expressions;
 
-namespace ReactAdminNetCoreServerAPI.DemoAPI.Controllers
+namespace ReactAdminRestServer.DemoAPI.Controllers
 {
     [Route("api/[controller]")]
     public class RoleController : EntityWithGuidIdController<Role, RoleReadModel, RoleCreateModel, RoleUpdateModel>

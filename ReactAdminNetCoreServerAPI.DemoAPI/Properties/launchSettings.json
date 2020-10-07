@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ReactAdminNetCoreServerAPI.DemoAPI": {
+    "ReactAdminRestServer.DemoAPI": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger/index.html",

@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\React-Admin_NetCoreServerAPI.Common\ReactAdminNetCoreServerAPI.Common.csproj" />
+    <ProjectReference Include="..\React-Admin_NetCoreServerAPI.Common\ReactAdminRestServer.csproj" />
   </ItemGroup>
 
 
