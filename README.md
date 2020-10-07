@@ -18,6 +18,9 @@ There are three projects in this repo:
 
 Any of these three projects are usable starting points for your project.  But the intention is you start with APITemplate, and take the steps described below.  I've dropped an installSQL.sql file in the APITemplate project so that you can follow along in that project to see how easy it is to build the demo app yourself!
 
+You can also install the common components directly into your existing project via the [nuget package](https://www.nuget.org/packages/ReactAdminRestServer/).  Via the package-manager console:
+
+> PM> Install-Package ReactAdminRestServer
 
 ## 1. Autogenerate your Data Access Layer (your "DAL")
 
