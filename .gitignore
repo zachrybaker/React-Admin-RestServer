@@ -6,3 +6,7 @@
 /Common/.vs/ReactAdminNetCoreServerAPI.Common
 /Common/bin/Debug/netcoreapp3.1
 /Common/obj
+/ReactAdminNetCoreServerAPI.APITemplate/obj
+/ReactAdminNetCoreServerAPI.DemoAPI/bin/Debug/netcoreapp3.1
+/ReactAdminNetCoreServerAPI.DemoAPI/obj
+/ReactAdminNetCoreServerAPI.APITemplate/bin/Debug/netcoreapp3.1

@@ -1,0 +1,73 @@
+# Explained in detail at https://efg.loresoft.com/en/latest/configuration/
+project:
+  namespace: 'ReactAdminNetCoreServerAPI.DemoAPI'
+  directory: .\ReactAdminNetCoreServerAPI.DemoAPI\
+database:
+  provider: SqlServer
+  connectionName: ConnectionStrings:DemoDBConnectionString
+  userSecretsId: d106eb49-28ab-49be-a838-0229c48642d2
+  tableNaming: Singular
+data:
+  context:
+    name: 'DemoAPIContext'
+    baseClass: DbContext
+    propertyNaming: Plural
+    namespace: '{Project.Namespace}.Data'
+    directory: '{Project.Directory}\Data'
+    document: false
+  entity:
+    entityNaming: Singular
+    relationshipNaming: Plural
+    prefixWithSchemaName: false
+    namespace: '{Project.Namespace}.Data.Entities'
+    directory: '{Project.Directory}\Data\Entities'
+    document: false
+  mapping:
+    namespace: '{Project.Namespace}.Data.Mapping'
+    directory: '{Project.Directory}\Data\Mapping'
+    document: false
+  query:
+    generate: false
+    indexPrefix: By
+    uniquePrefix: GetBy
+    namespace: '{Project.Namespace}.Data.Queries'
+    directory: '{Project.Directory}\Data\Queries'
+    document: false
+model:
+  shared:
+    namespace: '{Project.Namespace}.Domain.Models'
+    directory: '{Project.Directory}\Domain\Models'
+  read:
+    generate: true
+    name: '{Entity.Name}ReadModel'
+    document: false
+    exclude:
+      properties: ['RowVersion']
+  create:
+    generate: true
+    name: '{Entity.Name}CreateModel'
+    document: false
+    exclude:
+      entities: ['TestItem']
+      properties: ['RowVersion']
+  update:
+    generate: true
+    name: '{Entity.Name}UpdateModel'
+    document: false
+    exclude:
+      entities: ['TestItem']
+      properties: ['RowVersion']
+  mapper:
+    generate: true
+    name: '{Entity.Name}Profile'
+    baseClass: AutoMapper.Profile
+    namespace: '{Project.Namespace}.Domain.Mapping'
+    directory: '{Project.Directory}\Domain\Mapping'
+    document: false
+  validator:
+    generate: true
+    name: '{Model.Name}Validator'
+    baseClass: AbstractValidator<{Model.Name}>
+    namespace: '{Project.Namespace}.Domain.Validation'
+    directory: '{Project.Directory}\Domain\Validation'
+    document: false

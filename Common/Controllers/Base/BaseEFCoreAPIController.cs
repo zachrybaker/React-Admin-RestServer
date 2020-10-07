@@ -59,7 +59,8 @@ namespace ReactAdminNetCoreServerAPI.Common.Controllers
         /// <returns></returns>
         protected virtual async Task<IPagedList<TReadModel>> PerformQueryModel<TEntity,TIndentifier, TReadModel>(
             QueryDialectProperties<TEntity>   queryProps,
-            WithFilter<TEntity, TIndentifier> withFilter,
+            WithFilter<TEntity, TIndentifier> withIncludes,
+            WithFilter<TEntity, TIndentifier> withFilters,
             CancellationToken                 cancellationToken = default(CancellationToken))
              where TEntity : class, IHaveIdentifier<TIndentifier>
         {
@@ -68,11 +69,13 @@ namespace ReactAdminNetCoreServerAPI.Common.Controllers
 
             var query = dbSet.AsNoTracking();
             
+            query = withIncludes(query);
 
             if (queryProps.Predicate != null)
                 query = query.Where(queryProps.Predicate);
 
-            query = withFilter(query);
+            // Apply a filtering function.  Might just be a pass-thru.
+            query = withFilters(query);
 
             if (queryProps.Filters != null && queryProps.Filters.Count > 0)
                 foreach(var filter in queryProps.Filters)

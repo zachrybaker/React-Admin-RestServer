@@ -24,7 +24,7 @@ namespace ReactAdminNetCoreServerAPI.Common.Definitions
             {
                 // TODO: add Cache-Control, Expires, ETag, and Last-Modified headers per https://tools.ietf.org/html/rfc7234
                 DateTime expires = DateTime.UtcNow.AddSeconds((double)cacheInterval);
-                httpContext.Response.Headers.Add("validUntil", $"new Date('{expires.ToString("yyyy-mm-ddThh:MM:SS")}')");
+                httpContext.Response.Headers.Add("validUntil", $"new Date('{expires.ToString("yyyy-MM-ddThh:mm:ss")}')");
             }
 
             return httpContext;

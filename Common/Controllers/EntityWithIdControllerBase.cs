@@ -43,13 +43,23 @@ namespace ReactAdminNetCoreServerAPI.Common.Controllers
         /// <param name="queryable"></param>
         /// <returns></returns>
         protected virtual IQueryable<TEntity> IncludeTheseForDetailResponse(IQueryable<TEntity> queryable) => queryable;
+        
+        /// <summary>
+        /// When you need to include related entities on the list response, you can add them via this IQueryable by overriding this function 
+        /// </summary>
+        /// <param name="queryable"></param>
+        /// <returns></returns>
+        protected virtual IQueryable<TEntity> IncludeTheseForListResponse(IQueryable<TEntity> queryable) => queryable;
+
+
+
 
         /// <summary>
         /// IQueryable<TEntity> Delegated means to filter more specifically, for example to only include results by some criteria based on an Included child entity.
         /// </summary>
         /// <param name="queryable"></param>
         /// <returns></returns>
-        protected virtual IQueryable<TEntity> WithFilter(IQueryable<TEntity> queryable) => queryable;
+        protected virtual IQueryable<TEntity> WithFilters(IQueryable<TEntity> queryable) => queryable;
 
         /// <summary>
         /// Wraps the identifier function so that it can be added to, in the case of multiple IDs to match, or multiple filter critiera.
@@ -73,9 +83,10 @@ namespace ReactAdminNetCoreServerAPI.Common.Controllers
         /// <returns></returns>
         protected virtual async Task<TReadModel> ReadModel(TIndentifier id, CancellationToken cancellationToken = default(CancellationToken))
         {
-            var model = await IncludeTheseForDetailResponse(DataContext
-                .Set<TEntity>()
+            var model = await IncludeTheseForDetailResponse(
+                DataContext.Set<TEntity>()
                 .AsNoTracking())
+
                 .Where(GetIdentifierEqualityFn(id))
                 .ProjectTo<TReadModel>(Mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync(cancellationToken);
@@ -179,7 +190,7 @@ namespace ReactAdminNetCoreServerAPI.Common.Controllers
         protected virtual async Task<IPagedList<TReadModel>> QueryModel( string filter = null, string ranges = null, string sorts = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             var queryProps = new QueryDialectProperties<TEntity>(IdentityExpressionFn, PageSize, IdentityPropertyName, filter, ranges, sorts);
-            return await PerformQueryModel<TEntity, TIndentifier, TReadModel>(queryProps, WithFilter, cancellationToken);
+            return await PerformQueryModel<TEntity, TIndentifier, TReadModel>(queryProps, IncludeTheseForListResponse, WithFilters, cancellationToken);
         }
         #endregion Model interface
 
