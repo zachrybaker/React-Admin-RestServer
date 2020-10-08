@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>d106eb49-28ab-49be-a838-0229c48642d2</UserSecretsId>
   </PropertyGroup>
-
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.0.0" />
@@ -17,14 +17,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
-
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ReactAdminRestServer\ReactAdminRestServer.csproj" />
   </ItemGroup>
 
 
-  <ItemGroup>
-    <ProjectReference Include="..\React-Admin_NetCoreServerAPI.Common\ReactAdminRestServer.csproj" />
-  </ItemGroup>
-  
 </Project>
