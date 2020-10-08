@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ReactAdminRestServer.Common.Definitions
+namespace ReactAdminRestServer.Definitions
 {
     public interface IPagedList<T>  
     {

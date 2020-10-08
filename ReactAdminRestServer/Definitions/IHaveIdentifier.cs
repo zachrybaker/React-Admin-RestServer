@@ -1,4 +1,4 @@
-﻿namespace ReactAdminRestServer.Common.Definitions
+﻿namespace ReactAdminRestServer.Definitions
 {
     public interface IHaveIdentifier<TIndentifier>
     {

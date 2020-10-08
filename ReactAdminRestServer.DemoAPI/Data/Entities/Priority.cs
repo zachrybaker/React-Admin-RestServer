@@ -1,4 +1,4 @@
-using ReactAdminRestServer.Common.Definitions;
+using ReactAdminRestServer.Definitions;
 using System;
 using System.Collections.Generic;
 
